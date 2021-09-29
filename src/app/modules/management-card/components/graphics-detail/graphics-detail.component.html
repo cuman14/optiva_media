@@ -1,0 +1,19 @@
+<div class="detail" *ngIf="card">
+    <img alt="img" src="assets/{{card.image}}" class="card-list-image" />
+   <div class="detail-content">
+        <h1 class="detail-title">{{card.name}}</h1>
+        <p class="detail-price">{{card.price}}</p>
+        <h3 class="detail-description">Características</h3>
+        <ul>
+            <li *ngFor="let item of card.description">
+                <p>{{item}}</p>
+            </li>
+        </ul>
+        
+   </div>
+   <div class="detail-back" [routerLink]="['/cards-list']" routerLinkActive="router-link-active" >
+       <span class="detail-arrow-back"></span>
+      <p>Volver</p>
+   </div>
+
+</div>

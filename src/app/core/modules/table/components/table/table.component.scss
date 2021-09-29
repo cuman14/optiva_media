@@ -1,0 +1,37 @@
+.wrapper-card-list {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 0;
+}
+.card-list {
+    margin: 1rem;
+    box-shadow: rgb(17 17 26 / 10%) 0px 4px 16px, rgb(17 17 26 / 10%) 0px 8px 24px, rgb(17 17 26 / 10%) 0px 16px 56px;
+    border-radius: 9px;
+    padding: 1rem;
+    width: 334px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: ease 0.7s;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+.card-list-image {
+    width: 248px;
+}
+
+.card-list-arrows::before {
+    content: '\27AE';
+    font-size: 40px;
+    color: #1414b6;
+}
+
+.table-spinner {
+    bottom: 0;
+    position: relative;
+}

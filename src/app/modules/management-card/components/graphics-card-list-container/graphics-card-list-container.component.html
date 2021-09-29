@@ -1,0 +1,8 @@
+
+<div [formGroup]="form" >
+    <app-filter formControlName="filter"></app-filter>
+
+</div>
+<app-table [cards]="cards" (sendItem)="getGraphic($event)">
+
+</app-table>

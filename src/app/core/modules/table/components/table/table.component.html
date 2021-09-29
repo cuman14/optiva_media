@@ -1,0 +1,31 @@
+<div infiniteScroll [infiniteScrollDistance]="2"  
+[infiniteScrollThrottle]="10"
+(scrolled)="onScroll()">
+    <ul class="wrapper-card-list">
+        <li *ngFor="let card of cards" class="card-list" (click)="sendElement(card)" >
+            <div>{{card.id}}</div>
+            <img alt="img" src="assets/{{card.image}}" class="card-list-image" />
+            <div class="card-list-content">
+                <h3>{{card.name}}</h3>
+                <span>{{card.price}}</span>
+            </div>
+            <span class="card-list-arrows">
+            </span>
+        </li>
+    </ul>
+    <div class="table-spinner">
+        <div class="col-md-12 p-5">
+        <ngx-spinner
+        bdOpacity = 0.9
+        bdColor = ""
+        size = "default"
+        color = "#581f87"
+        type = "ball-pulse-sync"
+        [fullScreen] = "false"
+        >
+        </ngx-spinner>
+      </div>
+    </div>
+</div>
+
+

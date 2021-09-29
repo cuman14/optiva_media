@@ -1,0 +1,43 @@
+.detail {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 5px 0px, rgb(0 0 0 / 10%) 0px 0px 1px 0px;
+    padding: 4rem;
+    width: 64%;
+    flex-flow: wrap;
+    margin: 0 auto;
+}
+img {
+    transition: ease-in-out 1s;
+    cursor: zoom-in;
+}
+img:hover {
+    transform: scale(1.2);
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+}
+.detail-title {
+    color: #2b150f;
+}
+.detail-description {
+    border-bottom: 4.6px solid #7373ba;
+    width: 30rem;
+}
+.detail-price {
+    font-size: 40px;
+    color: #eb6408;
+}
+.detail-arrow-back::before {
+    content: '\261A'
+}
+.detail-back {
+    display: flex;
+    cursor: pointer;
+    align-items: end;
+    span {
+        font-size: 3rem;
+    }
+} 
+.detail-back:hover {
+    color: blue;
+}  

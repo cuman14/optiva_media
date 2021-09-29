@@ -1,0 +1,20 @@
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #5858add6;
+    height: 3rem;
+}
+.menu-item {
+    cursor: pointer;
+    display: flex;
+    align-items: baseline;
+    width: 9rem;
+    justify-content: space-evenly;
+    &:hover {
+      color: #3087e8c4;
+    }
+
+}
+.menu-active {
+    border-bottom: 1px solid #1414b6;
+}
