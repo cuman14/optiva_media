@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npm run serve",
+    "serve": "concurrently  \"npm:serve:api\" \"npm:serve:app\"",
+    "serve:app": "ng serve",
+    "serve:api": "node ../api/index.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
