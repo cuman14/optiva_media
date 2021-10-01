@@ -28,5 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # GUIA
 
-1. Arrancar el servidor node ejecutando el comando node index.js
-2. Arrancar la aplicación angular con el comando npm start
+1. Arrancar la aplicación angular con el comando npm start y ya ejecutará el servidor y la app web
